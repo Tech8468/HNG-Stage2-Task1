@@ -194,3 +194,37 @@
     text-align: left;
     color: #FFFFFF;
 }
+
+
+/* @media (max-width:318px), (max-width:378px), (max-width:432px) {
+    .descriptionBox{
+        width: 20%;
+        height: 790px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: black;
+    
+        
+    }
+    
+    .banner {
+        background-image: url(/src/components/imgs/Poster.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 600px;
+        width: 100%;
+    }
+    
+    .navBar {
+        width: 20%;
+        height: 50px;
+        margin-top: 15px;
+        display: flex;
+        align-items: center;
+       
+        justify-content: space-between;
+            background-color: gray;
+    }
+    
+} */
