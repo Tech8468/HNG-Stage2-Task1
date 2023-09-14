@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.featuredMovie {
+    width: 100%;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.featuredMovie .title {
+    width: 78%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.featuredMovie .title h1 {
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 47px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-top: 25px;
+}
+
+.featuredMovie .title .seeMore {
+    width: 90px;
+    height: 24px;
+    gap: 5px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 35px;
+}
+
+.featuredMovie.title.seeMore a {
+    text-decoration: none;
+}
+
+.featuredMovie.title.seeMore p,
+a {
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #BE123C;
+    text-decoration: none;
+}
+
+.featuredMovie .title .seeMore img {
+    width: 10px;
+    height: 14px;
+    border: 2px;
+    rotate: 90 deg;
+    margin-top: 7px;
+}
+
+.featuredMovie .movieList {
+    width: 78%;
+    height: 513px;
+    top: 761px;
+    left: 98px;
+    gap: 79px;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+}
+
+.featuredMovie .movieList .movieCard {
+    width: 250px;
+    height: 490px;
+    border-radius: 6px;
+    gap: 12px;
+}
+
+.featuredMovie .movieList .movieCard .poster {
+    width: 250px;
+    height: 370px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+}
+
+.featuredMovie .movieList .movieCard .poster .rating {
+    width: 218px;
+    height: 29.210525512695312px;
+    position: relative;
+    padding: 0px 0px 0px 188px;
+    margin-top: 15px;
+    gap: 114px;
+}
+
+.featuredMovie .movieList .movieCard .poster .rating .elipse {
+    width: 30px;
+    height: 30px;
+    /* margin-top: 30px; */
+    clip-path: circle(40%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #F3F4F680;
+    
+}
+
+.rating .elipse .rating-icon {
+    width: 15.999987602233887px;
+    height: 13.297462463378906px;
+    color: #D1D5DB;
+
+}
+
+.movieCard .releaseDate {
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #9CA3AF;
+    margin-top: 10px;
+}
+
+.movieCard h2 {
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 23px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #111827;
+    margin-top: 10px;
+}
+
+
+
+.movieCard .rating {
+    width: 100%;
+    height: 17px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    gap: 118px;
+}
+
+.movieCard .rating .rating-icon img{
+    width: 10%;
+height: 17px;
+
+}
+
+.movieCard .rating .imdb-icon,
+.rt-icon {
+    width: 100%;
+    height: 17px;
+    gap: 5px;
+    display: flex;
+}
+
+.movieCard .rating .imdb-icon p,
+.rt-icon p {
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 12px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #111827;
+    margin-top: 3px;
+
+}
+
+.movieCard .txt {
+    font-family: DM Sans;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #9CA3AF;
+    margin-top: 10px;
+}
