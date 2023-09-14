@@ -4,7 +4,8 @@ import "./css/HomePage.css"
 import "./css/Banner.css"
 import "./css/Feature.css"
 import "./css/Footer.css"
-import "./css/Movies.css"
+import "./css/Upcoming.css"
+import "./css/Popular.css"
 import {BrowserRouter, Routes, Route} from "react-router-dom";
 import HomePage from './components/pages/HomePage';
 import MoviesPage from './components/pages/MoviesPage';

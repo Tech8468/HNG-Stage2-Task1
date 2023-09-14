@@ -15,6 +15,10 @@ import Pix10 from "./imgs/Two Tickets.png";
 import Pix11 from "./imgs/List.png";
 import Pix12 from "./imgs/Logout.png";
 
+import React from "react";
+import { useState, useEffect } from "react";
+
+
 function Movies() {
     return (
         <div className="">

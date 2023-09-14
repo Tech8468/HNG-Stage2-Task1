@@ -4,14 +4,7 @@
     box-sizing: border-box;
 }
 
-.featuredMovie {
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    
-}
+
 
 .upcomingMovie {
     width: 100%;
@@ -19,10 +12,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+    margin-top: 20px;
 }
 
-.featuredMovie .title {
+.upcomingMovie .title {
     width: 78%;
     height: 100px;
     display: flex;
@@ -30,7 +23,7 @@
     margin-top: 15px;
 }
 
-.featuredMovie .title h1 {
+.upcomingMovie .title h1 {
     font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 36px;
     font-weight: 700;
@@ -40,7 +33,7 @@
     margin-top: 25px;
 }
 
-.featuredMovie .title .seeMore {
+.upcomingMovie .title .seeMore {
     width: 90px;
     height: 24px;
     gap: 5px;
@@ -49,11 +42,11 @@
     margin-top: 35px;
 }
 
-.featuredMovie.title.seeMore a {
+.upcomingMovie.title.seeMore a {
     text-decoration: none;
 }
 
-.featuredMovie.title.seeMore p,
+.upcomingMovie.title.seeMore p,
 a {
     font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 18px;
@@ -65,7 +58,7 @@ a {
     text-decoration: none;
 }
 
-.featuredMovie .title .seeMore img {
+.upcomingMovie .title .seeMore img {
     width: 10px;
     height: 14px;
     border: 2px;
@@ -73,7 +66,7 @@ a {
     margin-top: 7px;
 }
 
-.featuredMovie .movieList {
+.upcomingMovie .movieList {
     width: 78%;
     height: 513px;
     top: 761px;
@@ -83,14 +76,14 @@ a {
     grid-template-columns: repeat(10, 1fr);
 }
 
-.featuredMovie .movieList .movieCard {
+.upcomingMovie .movieList .movieCard {
     width: 250px;
     height: 490px;
     border-radius: 6px;
     gap: 12px;
 }
 
-.featuredMovie .movieList .movieCard .poster {
+.upcomingMovie .movieList .movieCard .poster {
     width: 250px;
     height: 370px;
     display: flex;
@@ -99,7 +92,7 @@ a {
     background-color: black;
 }
 
-.featuredMovie .movieList .movieCard .poster .rating {
+.upcomingMovie .movieList .movieCard .poster .rating {
     width: 218px;
     height: 29.210525512695312px;
     position: relative;
@@ -108,7 +101,7 @@ a {
     gap: 114px;
 }
 
-.featuredMovie .movieList .movieCard .poster .rating .elipse {
+.upcomingMovie .movieList .movieCard .poster .rating .elipse {
     width: 30px;
     height: 30px;
     /* margin-top: 30px; */
@@ -121,14 +114,14 @@ a {
     
 }
 
-.rating .elipse .rating-icon {
+.upcomingMovie .rating .elipse .rating-icon {
     width: 15.999987602233887px;
     height: 13.297462463378906px;
     color: #D1D5DB;
 
 }
 
-.movieCard .releaseDate {
+.upcomingMovie .movieCard .releaseDate {
     font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 12px;
     font-weight: 700;
@@ -139,7 +132,7 @@ a {
     margin-top: 10px;
 }
 
-.movieCard h2 {
+.upcomingMovie .movieCard h2 {
     font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 18px;
     font-weight: 700;
@@ -152,7 +145,7 @@ a {
 
 
 
-.movieCard .rating {
+.upcomingMovie .movieCard .rating {
     width: 100%;
     height: 17px;
     display: flex;
@@ -161,13 +154,13 @@ a {
     gap: 118px;
 }
 
-.movieCard .rating .rating-icon img{
+.upcomingMovie .movieCard .rating .rating-icon img{
     width: 10%;
 height: 17px;
 
 }
 
-.movieCard .rating .imdb-icon,
+.upcomingMovie .movieCard .rating .imdb-icon,
 .rt-icon {
     width: 100%;
     height: 17px;
@@ -175,7 +168,7 @@ height: 17px;
     display: flex;
 }
 
-.movieCard .rating .imdb-icon p,
+.upcomingMovie .movieCard .rating .imdb-icon p,
 .rt-icon p {
     font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 12px;
@@ -188,7 +181,7 @@ height: 17px;
 
 }
 
-.movieCard .txt {
+.upcomingMovie .movieCard .txt {
     font-family: DM Sans;
     font-size: 12px;
     font-weight: 700;
@@ -198,3 +191,23 @@ height: 17px;
     color: #9CA3AF;
     margin-top: 10px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
