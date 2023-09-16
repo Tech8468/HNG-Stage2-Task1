@@ -36,7 +36,7 @@ function Footer() {
             </div>
             <div className="txt">
                 <p >
-                    © 2021 MovieBox by Adriana Eka Prayudha
+                    © 2021 MovieBox by Aig-Precious
                 </p>
             </div>
         </div>
