@@ -29,8 +29,8 @@ function Banner() {
             )
 
 
-          
-            setMovies();
+
+        setMovies();
 
     }, []);
 
@@ -39,54 +39,63 @@ function Banner() {
 
     return (
         <div>
-        {loading === true ? (
-            <div>Loading, please wait...</div>
-        ) : (
-            movies.map((movie) => (
+            {loading === true ? (
+                <div>Loading, please wait...</div>
+            ) : (
+                movies.map((movie) => (
 
-        <div className="banner" style={{ 
-            width: "100%",
-            height: "600px",
-            backgroundRepeat: "no-repeat", 
-            backgroundImage: `url(https://image.tmdb.org/t/p/original${movie.backdrop_path})`,
-            backgroundSize: "cover",
-            }}>
+                    <div className="banner" style={{
+                        width: "100%",
+                        height: "600px",
+                        backgroundRepeat: "no-repeat",
+                        backgroundImage: `url(https://image.tmdb.org/t/p/original${movie.backdrop_path})`,
+                        backgroundSize: "cover",
+                    }}>
 
-            <div className="header" >
-                <Nav />
-            </div>
-                                
-                
-            <div className="descriptionBox">
-                <div className="dB-text1">
-                    <h1 >{movie.original_title}</h1>
-                </div>
-                <div className="rating" >
-                    <div className="imdb-icon">
-                        <img src={Pix1} alt="" />
-                        <p>{movie.vote_average}/100</p>
+                        <div className="header" >
+                            <Nav />
+                        </div>
+
+
+                        <div className="descriptionBox">
+                            <div className="dB-text1">
+                                <h1 >{movie.original_title}</h1>
+                            </div>
+                            <div className="rating" >
+                                <div className="imdb-icon">
+                                    <img src={Pix1} alt="" />
+                                    <p>{movie.vote_average}/100</p>
+                                </div>
+                                <div className="rt-icon">
+                                    <img src={Pix2} alt="" />
+                                    <p>97%</p>
+                                </div>
+                            </div>
+                            <div className="db-text2">
+                                <p>{movie.overview}</p>
+                            </div>
+                            <div className="db-button">
+                                <img src={Pix3} alt="" />
+                                <p>WATCH LATER</p>
+                            </div>
+                        </div>
+                        <div className="descriptionBox2">
+                            <div className="dB-text1">
+                                <h1 >{movie.original_title}</h1>
+                            </div>
+                            <div className="db-button">
+                                <img src={Pix3} alt="" />
+                                <p>WATCH LATER</p>
+                            </div>
+                        </div>
+
+
+
+
                     </div>
-                    <div className="rt-icon">
-                        <img src={Pix2} alt="" />
-                        <p>97%</p>
-                    </div>
-                </div>
-                <div className="db-text2">
-                    <p>{movie.overview}</p>
-                </div>
-                <div className="db-button">
-                    <img src={Pix3} alt="" />
-                    <p>WATCH LATER</p>
-                </div>
-            </div>
-
-
-
-
-        </div>
-        ))
-        )
-        }
+                ))
+            )
+            }
         </div>
     )
 }

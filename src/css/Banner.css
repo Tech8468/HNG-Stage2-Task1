@@ -29,7 +29,7 @@
     margin-top: 15px;
     display: flex;
     align-items: center;
-   
+
     justify-content: space-between
         /* background-color: gray; */
 }
@@ -87,7 +87,7 @@
     color: white;
 }
 
-.search .searchIcon{
+.search .searchIcon {
     font-size: 25px;
     margin-top: 7px;
     position: relative;
@@ -102,6 +102,10 @@
     left: 170px;
     gap: 16px;
     /* background-color: white; */
+}
+
+.descriptionBox2{
+    display: none;
 }
 
 .descriptionBox .dB-text1 {
@@ -130,8 +134,7 @@
     margin-top: 15px;
 }
 
-.descriptionBox .rating .imdb-icon
- {
+.descriptionBox .rating .imdb-icon {
     width: Hug (101px);
     height: Hug (17px);
     top: 128px;
@@ -139,7 +142,7 @@
     display: flex;
 }
 
-.descriptionBox .rating .rt-icon{
+.descriptionBox .rating .rt-icon {
     gap: 10px;
 }
 
@@ -194,11 +197,11 @@
     cursor: pointer;
 }
 
-.descriptionBox .db-button:hover{
+.descriptionBox .db-button:hover {
     background: #F8E7EB;
     border: 1px solid #BE123C;
     color: black;
- 
+
 }
 
 .descriptionBox .db-button img {
@@ -219,26 +222,24 @@
 }
 
 
-@media (max-width:318px), (max-width:378px), (max-width:432px) {
-    .descriptionBox{
-        width: 20%;
-        height: 790px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        background-color: black;
-    
-        
+@media (max-width:318px),
+(max-width:378px),
+(max-width:432px) {
+    .descriptionBox {
+        display: none;
+
     }
-    
+
     .banner {
         background-image: url(/src/components/imgs/Poster.png);
-        background-size: contain;
+        background-size: center;
+        background-repeat: no-repeat;
+        background-position: center;
         background-repeat: no-repeat;
         height: 600px;
         width: 100%;
     }
-    
+
     .navBar {
         width: 300%;
         height: 20px;
@@ -246,7 +247,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-       
+
         /* justify-content: space-between; */
     }
 
@@ -256,41 +257,66 @@
         margin-top: 15px;
         display: flex;
         align-items: center;
-       
-        /* justify-content: space-between */
-            /* background-color: gray; */
-    }
-    
-    .imgTv,
-.navSignin {
-    display: flex;
-    align-items: center;
-    gap:    10px;
-}
 
-    
-    .imgTv a,
-    .navSignin a {
+        /* justify-content: space-between */
+        /* background-color: gray; */
+    }
+
+    .imgTv {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        position: relative;
+        right: 70px;
+    }
+
+    .imgTv a{
         text-decoration: none;
         color: white;
         font-family: sans-serif;
         font-weight: 500;
         font-size: 20px;
     }
-    
+
+    .navSignin {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        position: relative;
+        bottom: 80px;
+        left: 85px;
+    }
+
+
+   
+    .navSignin a {
+        text-decoration: none;
+        color: white;
+        font-family: sans-serif;
+        font-weight: 500;
+        font-size: 15px;
+        cursor: pointer;
+        margin-top: 4px;
+    }
+
+    .navSignin img {
+        display: none;
+    }
+
+
     .imgTv h1 {
         text-decoration: none;
         color: white;
         font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
         font-size: 10px;
     }
-    
+
     .imgTv img {
         width: 20px;
         height: 100%;
         /* margin-top: 10px; */
     }
-    
+
     .search {
         width: 200%;
         display: flex;
@@ -299,11 +325,11 @@
         border: 1px solid white;
         border-radius: 5px;
         /* padding: 5px; */
-    
+
     }
-    
+
     .search input {
-        width:80%;
+        width: 80%;
         border: none;
         outline: none;
         background: transparent;
@@ -316,31 +342,27 @@
         text-align: center;
         color: white;
     }
-    
-    .search .searchIcon{
+
+    .search .searchIcon {
         font-size: 18px;
         margin-top: 11px;
         position: relative;
         right: 10px;
     }
     
-
-.navSignin {
-    display: block;
-    align-items: center;
-    gap: 30px;
-
-}
-
-.navSignin img{
+   .descriptionBox {
     display: none;
-}
+   }
 
-.navSignin a {
-    text-decoration: none;
-    color: white;
-    font-family: sans-serif;
-    font-weight: 500;
-}
-    
+    .descriptionBox2{
+        width: 100%;
+        height: 100px;
+        background-color: black;
+    }
+
+    .descriptionBox .dB-text1 h1 {
+        font-size: 20px;
+    }
+
+
 }
