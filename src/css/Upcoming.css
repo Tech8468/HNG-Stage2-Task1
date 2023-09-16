@@ -73,7 +73,7 @@ a {
     left: 98px;
     gap: 79px;
     display: grid;
-    grid-template-columns: repeat(10, 1fr);
+    grid-template-columns: repeat(4, 1fr);
 }
 
 .upcomingMovie .movieList .movieCard {
@@ -215,7 +215,7 @@ height: 17px;
         left: 98px;
         gap: 79px;
         display: grid;
-        grid-template-columns: repeat(10, 1fr);
+        grid-template-columns: repeat(4, 1fr);
         overflow-x: auto;
         flex-wrap: nowrap;
         

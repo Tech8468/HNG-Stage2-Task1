@@ -32,7 +32,7 @@
 
 .featuredMovie .title h1 {
     font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 36px;
+    font-size: 20px;
     font-weight: 700;
     line-height: 47px;
     letter-spacing: 0em;
@@ -49,14 +49,14 @@
     margin-top: 35px;
 }
 
-.featuredMovie.title.seeMore a {
+.featuredMovie .title .seeMore a {
     text-decoration: none;
 }
 
-.featuredMovie.title.seeMore p,
+.featuredMovie .title .seeMore p,
 a {
     font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 18px;
+    font-size: 15px;
     font-weight: 400;
     line-height: 24px;
     letter-spacing: 0em;
@@ -206,4 +206,69 @@ height: 17px;
     text-align: left;
     color: #9CA3AF;
     margin-top: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:318px),
+(max-width:378px),
+(max-width:432px) {
+    
+
+    .featuredMovie .title {
+        width: 78%;
+        height: 100px;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 15px;
+    }
+    
+    .featuredMovie .title h1 {
+        font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 47px;
+        letter-spacing: 0em;
+        text-align: left;
+        margin-top: 25px;
+    }
+    
+    .featuredMovie .title .seeMore {
+        width: 90px;
+        height: 24px;
+        gap: 5px;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 35px;
+    }
+    
+    .featuredMovie .title .seeMore a {
+        text-decoration: none;
+    }
+    
+    .featuredMovie .title .seeMore p,
+    a {
+        font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #BE123C;
+        text-decoration: none;
+    }
+    
+    
+    
 }
