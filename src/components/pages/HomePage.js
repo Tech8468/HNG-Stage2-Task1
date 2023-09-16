@@ -1,14 +1,14 @@
 import Banner from '../Banner';
-import Feature from '../Feature';
-import Footer from '../Footer';
-import Popular from '../NewArrival-1';
-import Upcoming from '../NewArrival-2';
+import TopRatedMovies from '../TopRatedMovies.js';
+import Footer from '../Footer.js';
+import Popular from '../PopularMovies';
+import Upcoming from '../UpcomingMovies';
 function HomePage() {
     return (
         <div className='bannerWidth'>
             <div className='cover'>
                 <Banner />
-                <Feature />
+                <TopRatedMovies />
                 <Popular />
                 <Upcoming />
                 <Footer />

@@ -6,7 +6,7 @@ import { PiHeartThin } from "react-icons/pi";
 import { useState, useEffect } from "react";
 
 
-function Popular() {
+function Upcoming() {
 
     const [movies, setMovies] = useState([]);
     const [loading, setLoading] = useState(true);
@@ -14,7 +14,7 @@ function Popular() {
 
     useEffect(() => {
 
-        fetch('https://api.themoviedb.org/3/movie/popular?api_key=7c8e662c141d552a09c780fb61d3f40d')
+        fetch('https://api.themoviedb.org/3/movie/upcoming?api_key=7c8e662c141d552a09c780fb61d3f40d')
             .then((resp) => resp.json())
             .then((data) => {
                 let slicedData = data.results;
@@ -32,7 +32,7 @@ function Popular() {
     }, []);
 
     return (
-        <div className="popularMovie">
+        <div className="upcomingMovie">
             <div className="movieList">
                 {loading === true ? (
                     <div>Loading, please wait...</div>
@@ -72,4 +72,4 @@ function Popular() {
     )
 };
 
-export default Popular;
+export default Upcoming;

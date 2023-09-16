@@ -6,6 +6,8 @@ import "./css/Feature.css"
 import "./css/Footer.css"
 import "./css/Upcoming.css"
 import "./css/Popular.css"
+import "./css/Movies.css"
+
 import {BrowserRouter, Routes, Route} from "react-router-dom";
 import HomePage from './components/pages/HomePage';
 import MoviesPage from './components/pages/MoviesPage';
@@ -14,7 +16,7 @@ function App() {
     <BrowserRouter>
         <Routes>
           <Route path="/" element={<HomePage />}/>
-          <Route path="/movies" element={<MoviesPage />}/>
+          <Route path="/movie/:id" element={<MoviesPage />} />
         </Routes>
     </BrowserRouter>
   );
