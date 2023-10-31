@@ -90,17 +90,17 @@ function Movies() {
                             </div>
                             <div className="logout logOut">
                                 <Link to="/"><img src={Pix12} alt="" /></Link>
-                                <Link to="/"><p>Log out</p></Link>
+                                <Link to="/"><p>Logout</p></Link>
                             </div>
                         </div>
 
                         <div className="dashboardBanner" data-testid= "movie-poster">
                             <div className="banner1" style={{
                                 width: "100%",
-                                height: "440px",
+                                height: "750px",
                                 backgroundRepeat: "no-repeat",
                                 backgroundImage: `url(https://image.tmdb.org/t/p/original${movieDetails.backdrop_path})`,
-                                backgroundSize: "cover",
+                                backgroundSize: "contain",
                             }}>
                                 <button>Go to Cart</button>
                             </div>
