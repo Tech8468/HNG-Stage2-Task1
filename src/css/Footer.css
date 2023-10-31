@@ -63,7 +63,7 @@ justify-content: center;
     justify-content: center;
     align-items: center;
     list-style: none;
-    margin-top: 10px;
+    /* margin-top: 10px; */
 }
 
 .links li {
@@ -89,7 +89,7 @@ justify-content: center;
     font-weight: 700;
     line-height: 23px;
     letter-spacing: 0px;
-    margin-top: 10px;
+    /* margin-top: 10px; */
 }
 
 
@@ -108,7 +108,7 @@ justify-content: center;
         /* flex-direction: column; */
         justify-content: center;
         align-items: center;
-        margin-top: 50px;
+        margin-top: 400px;
         /* background-color: #000000;
         color: white;
         font-size: 20px;

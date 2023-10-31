@@ -62,7 +62,7 @@ function TopRatedMovies() {
                             </div>
                             <p className="releaseDate" data-testid="movie-release-date">USA, {movie.release_date} - Current</p>
                             <h2 data-testid="movie-title">{movie.title}</h2>
-                            <div className="rating" >
+                            <div className="movie-rating" >
                                 <div className="imdb-icon">
                                     <img src={Pix2} alt="" />
                                     <p>{movie.vote_average}/{movie.vote_count}</p>

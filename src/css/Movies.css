@@ -18,9 +18,9 @@
 .sideBar {
   width: 220px;
   height: 982px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  display: block;
+  /* flex-direction: column;
+  align-items: center; */
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
   border: 1px solid rgb(211, 208, 208);
   border-right: none;
@@ -487,3 +487,127 @@
   padding: 10px;
 }
 
+
+
+
+@media (max-width:318px),
+(max-width:320px),
+(max-width:378px),
+(max-width:432px) {
+
+  .container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+
+    
+    /* background-color: gray; */
+    /* padding-left: 190px;
+      padding-right: 190px; */
+  }
+
+  .sideBar{
+    display: none;
+  }
+
+  .container .mediaSideBar{
+    width: 95%;
+    height: 50px;
+    display: flex;
+    box-shadow: 2px 5px 5px rgba(184, 134, 36, 0.661);
+    border: 2px solid rgb(211, 208, 208);
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    position: relative;
+    top: 2150px;
+  }
+
+  .container .mediaSideBar .logo{
+    margin-top: -47px;
+    position: relative;
+    left: 10px;
+  }
+
+  .container .mediaSideBar .dBoard{
+    margin-top: -20px;
+  }
+
+  .container .mediaSideBar .mediaHome2{
+    position: relative;
+    right: 80px;
+  }
+
+  .container .mediaSideBar .mediaHome3{
+    position: relative;
+    right: 120px;
+    margin-top: -16px;
+  }
+
+  .container .mediaSideBar .mediaHome4{
+    position: relative;
+    right: 170px;
+    margin-top: -16px;
+  }
+
+  .container .mediaSideBar .logOut{
+    width: 300%;
+    display: flex;
+    position: relative;
+    right: 170px;
+    margin-top: -16px;
+    background-color: orange;
+  }
+
+  .container .mediaSideBar .logOut img{
+    width: 200%;
+    height: 200px;
+    position: relative;
+    top: 5000px;
+
+  }
+
+  .container .mediaSideBar .logout p{
+    font-size: 10px;
+  }
+
+  .container .mediaSideBar .logo img{
+    width: 18px;
+  }
+  .dBoard img{
+    width: 10px;
+    /* margin-top: -10px; */
+  }
+
+  .dBoard p, .home, .ticket{
+    display: none;
+  }
+
+  .container .mediaSideBar .ticket{
+    display: none;
+  }
+
+  .container .mediaSideBar .logo p{
+    display: none;
+  }
+  
+  /* .container .mediaSideBar {
+    width: 100%;
+    height: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    border: 1px solid rgb(211, 208, 208);
+    border-right: none;
+    border-left: none;
+    border-top-right-radius: 50px;
+    border-top-left-radius: 50px;
+    background-color: blue;
+
+    border-bottom-left-radius: 5px;
+  } */
+  
+}

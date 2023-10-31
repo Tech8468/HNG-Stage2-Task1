@@ -62,24 +62,24 @@ function Movies() {
                
 
                     <div className="container" >
-                        <div className="sideBar">
+                        <div className="sideBar mediaSideBar">
                             <div className="logo">
                                 <Link to="/"><img src={Pix1} alt="" /></Link>
                                 <Link to="/"><p>MovieBox</p></Link>
                             </div>
-                            <div className="dBoard">
+                            <div className="dBoard mediaHome1">
                                 <Link to="/"><img className="home" src={Pix2} alt="" /></Link>
                                 <Link to="/"><p>Home</p></Link>
                             </div>
-                            <div className="dBoard">
+                            <div className="dBoard mediaHome2">
                                 <Link to="/"><img className="movies" src={Pix3} alt="" /></Link>
                                 <Link to="/"><p>Movies</p></Link>
                             </div>
-                            <div className="dBoard">
+                            <div className="dBoard mediaHome3">
                                 <Link to="/"><img className="tvSeries" src={Pix4} alt="" /></Link>
                                 <Link to="/"><p>TV Series</p></Link>
                             </div>
-                            <div className="dBoard">
+                            <div className="dBoard mediaHome4">
                                 <Link to="/"><img className="calendar" src={Pix5} alt="" /></Link>
                                 <Link to="/"><p>Upcoming</p></Link>
                             </div>
@@ -88,7 +88,7 @@ function Movies() {
                                 <p>50k people are playing now</p>
                                 <button>Start playing</button>
                             </div>
-                            <div className="logout">
+                            <div className="logout logOut">
                                 <Link to="/"><img src={Pix12} alt="" /></Link>
                                 <Link to="/"><p>Log out</p></Link>
                             </div>
