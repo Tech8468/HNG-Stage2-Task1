@@ -14,7 +14,7 @@ import Pix9 from "./imgs/Star.png";
 import Pix10 from "./imgs/Two Tickets.png";
 import Pix11 from "./imgs/List.png";
 import Pix12 from "./imgs/Logout.png";
-// import poster from "./imgs/Group56.png"
+import Play from "./imgs/Play.png"
 
 import React from "react";
 import { useState, useEffect } from "react";
@@ -102,7 +102,9 @@ function Movies() {
                                 backgroundImage: `url(https://image.tmdb.org/t/p/original${movieDetails.backdrop_path})`,
                                 backgroundSize: "contain",
                             }}>
-                                <button>Go to Cart</button>
+                                <div className="playIcon">
+                                <Link to="https://www.youtube.com/watch?v=yrwQZtfY91A"><img src={Play} alt="" /></Link>
+                                </div>
                             </div>
 
                             <div className="banner2">

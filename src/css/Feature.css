@@ -22,6 +22,12 @@
     
 }
 
+.featuredMovie{
+    width: 100%;
+    height: auto;
+    /* background-color: #9CA3AF; */
+}
+
 .featuredMovie .title {
     width: 78%;
     height: 100px;
@@ -75,12 +81,13 @@ a {
 
 .featuredMovie .movieList {
     width: 78%;
-    height: 550px;
+    height: auto;
     top: 761px;
     left: 98px;
     gap: 79px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    /* background-color: #BE123C; */
     /* overflow-x: auto;
     flex-wrap: nowrap; */
     
@@ -235,22 +242,25 @@ height: 17px;
 
 
 
-@media (max-width:318px),
-(max-width:378px),
-(max-width:432px) {
+@media 
+/* (max-width:318px), */
+/* (max-width:378px), */
+(max-width:425px) {
 
     .featuredMovie {
-        width: 60%;
+        width: 100%;
         height: 1280vh;
         display: flex;
         flex-direction: column;
         align-items: center;
+
+        background-color: aqua;
         
     }
     
     
     .featuredMovie .movieList {
-        width: 50%;
+        width: 100%;
         height: auto;
         top: 761px;
         /* left: 98px; */
@@ -260,27 +270,34 @@ height: 17px;
         /* overflow-x: auto;
         flex-wrap: nowrap; */
         
+        background-color: greenyellow;
     }
     
     .featuredMovie .movieList .movieCard {
-        width: 250px;
+        width: 100%;
         height: auto;
         border-radius: 6px;
         gap: 90px;
+        /* margin: 10px; */
+        padding: 10px;
         margin-top: 50px;
+        background-color: #BE123C;
     }
     
-    .featuredMovie .movieList .movieCard:hover{
+    /* .featuredMovie .movieList .movieCard:hover{
         cursor: pointer;
         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
         transform: scale(1.1);
 
-        width: 255%;
+        width: 100%;
         padding: 5px;
 
     }
+     */
     
-    
+     .featuredMovie .movieList .movieCard .poster{
+        width: 100%;
+     }
     .featuredMovie .title {
         width: 100%;
         height: 150px;
