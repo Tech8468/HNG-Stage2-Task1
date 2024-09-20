@@ -9,7 +9,7 @@
 
   .bannerWidth{
     width: 100%;
-    height: 800px;
+    height: auto;
     display: block;
     /* flex-direction: column;
     align-items: center; */
@@ -18,10 +18,19 @@
 
   .cover{
     width: 100%;
-    height: 400px;
+    height: auto;
     /* background-color: black; */
     /* display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center; */
+  }
+
+  .crop{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* background-color: aquamarine; */
   }

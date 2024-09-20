@@ -8,11 +8,14 @@ function HomePage() {
         <div className='bannerWidth'>
             <div className='cover'>
                 <Banner />
+                {/* <div className='crop'> */}
                 <TopRatedMovies />
+                {/* </div> */}
                 {/* <Popular />
                 <Upcoming /> */}
                 <Footer />
             </div>
+            
         </div>
     )
 }

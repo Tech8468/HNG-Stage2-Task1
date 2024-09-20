@@ -22,7 +22,7 @@ function TopRatedMovies() {
             .then((resp) => resp.json())
             .then((data) => {
                 let slicedData = data.results;
-                slicedData = slicedData.slice(0, 10);
+                slicedData = slicedData.slice(0, 16);
                 console.log(slicedData);
                 setMovies(slicedData)
                 setLoading(false)
@@ -49,7 +49,8 @@ function TopRatedMovies() {
                     <div>Loading, please wait...</div>
                 ) : (
                     movies.map((movie) => (
-                       <Link to={`/movie/${movie.id}`}> <div className="movieCard" data-testid="movie-card" key={movie.id}>
+                       <Link to={`/movie/${movie.id}`}> 
+                       <div className="movieCard" data-testid="movie-card" key={movie.id}>
                             <div className="poster" data-testid="movie-poster" style={{ 
                                 backgroundRepeat: "no-repeat", 
                                 backgroundImage: `url(https://image.tmdb.org/t/p/original${movie.poster_path})`,
