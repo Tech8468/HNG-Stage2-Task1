@@ -58,7 +58,9 @@ function TopRatedMovies() {
                                 transition: "transform 0.2s"
                                 }}>
                                 <div className="rating">
-                                    <div className="elipse"><PiHeartThin className="rating-icon" /></div>
+                                    <div className="elipse">
+                                        <PiHeartThin className="rating-icon" />
+                                    </div>
                                 </div>
                             </div>
                             <p className="releaseDate" data-testid="movie-release-date">USA, {movie.release_date} - Current</p>
