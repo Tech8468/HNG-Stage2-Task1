@@ -368,8 +368,7 @@
 
 @media 
 (max-width:318px),
-(max-width:378px),
-(max-width:425px) {
+(max-width:375px){
     .descriptionBox {
         display: none;
 
@@ -428,7 +427,7 @@
     }
 
     .navSignin {
-        width: 80%;
+        width: 90%;
         /* background-color: aquamarine; */
         display: flex;
         align-items: center;
@@ -484,7 +483,7 @@
         padding: 0px;
         margin: 0;
         position: relative;
-        left: 95px;
+        left: 70px;
         background-color: #BE123C;
 
     }
