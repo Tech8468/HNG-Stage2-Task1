@@ -335,8 +335,8 @@ a {
 
 
 @media 
-/* (max-width:318px), */
-/* (max-width:378px), */
+(max-width:318px),
+(max-width:378px),
 (max-width: 425px) {
 
     .featuredMovie {
