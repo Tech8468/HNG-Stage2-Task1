@@ -427,3 +427,24 @@ a {
 
 
 
+
+
+@media 
+(max-width:330px){
+
+    .movie-rating{
+        display: flex;
+        justify-content: space-between;
+        gap: 150px;
+        margin-top: 10px;
+    }
+    
+    .rating .elipse{
+        position: relative;
+        left: 30px;
+    }
+
+    
+    
+}
+
